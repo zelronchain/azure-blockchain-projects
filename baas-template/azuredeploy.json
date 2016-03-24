@@ -4,9 +4,9 @@
   "parameters": {
     "newLabName": {
       "type": "string",
-      "defaultValue": "BlockchainAsAServiceLab", 
+      "defaultValue": "FabrikamDemoLab", 
       "metadata": {
-        "description": "The name of the new blockchain lab instance to be created."
+        "description": "The name of the new lab instance to be created."
       }
     },
     "labVmShutDownTime": {
@@ -65,7 +65,7 @@
     },
     "artifactRepoDisplayName": {
       "type": "string",
-      "defaultValue": "BaaS", 
+      "defaultValue": "FabrikamPrivateRepo", 
       "metadata": {
         "description": "Set 'artifact repository': the display name of the repo."
       }
@@ -86,7 +86,7 @@
     },
     "pilotVMName": {
       "type": "string",
-      "defaultValue": "TestBlockchain001",
+      "defaultValue": "TestBox001",
       "metadata": {
         "description": "For the 1st new VM created in the lab: The name of the VM."
       }
@@ -114,35 +114,35 @@
     },
     "devBoxTemplateName": {
       "type": "string",
-      "defaultValue": "Blockchain Dev Box",
+      "defaultValue": "Fabrikam Dev Box",
       "metadata": {
         "description": "For the 1 out of 3 custom VM images: Name of the VM template being created or updated."
       }
     },
     "devBoxTemplateDescription": {
       "type": "string",
-      "defaultValue": "Blockchain Dev box environment",
+      "defaultValue": "Fabrikam Dev box environment",
       "metadata": {
         "description": "For the 1 out of 3 custom VM image: Details about the VM template being created or updated."
       }
     },
     "testBoxTemplateName": {
       "type": "string",
-      "defaultValue": "Blockchain Test Box",
+      "defaultValue": "Fabrikam Test Box",
       "metadata": {
         "description": "For the 2 out of 3 custom VM image: Name of the VM template being created or updated."
       }
     },
     "testBoxTemplateDescription": {
       "type": "string",
-      "defaultValue": "Blockchain Test box environment",
+      "defaultValue": "Fabrikam Test box environment",
       "metadata": {
         "description": "For the 2 out of 3 custom VM image: Details about the VM template being created or updated."
       }
     },    
     "goldenImageTemplateName": {
       "type": "string",
-      "defaultValue": "Blockchain Latest Testing Build 0219",
+      "defaultValue": "Fabrikam Latest Testing Build 0219",
       "metadata": {
         "description": "For the 3 out of 3 custom VM image: Name of the VM template being created or updated."
       }
@@ -156,14 +156,14 @@
     },
     "devBoxVMName": {
       "type": "string",
-      "defaultValue": "TestBlockchain001", 
+      "defaultValue": "DevBox001", 
       "metadata": {
         "description": "For the 2nd VM created in the lab that uses the 1st custom VM image: The name of the new VM to be created."
       }
     }, 
     "testBoxVMName": {
       "type": "string",
-      "defaultValue": "TestBlockchain002", 
+      "defaultValue": "TestBox002", 
       "metadata": {
         "description": "For the 3rd VM created in the lab that uses the 2nd custom VM image: The name of the new vm to be created."
       }
@@ -179,7 +179,7 @@
   "variables": {
     "devTemplateResourceName": "[concat(parameters('newLabName'), '/', parameters('devBoxTemplateName'))]",
     "testTemplateResourceName": "[concat(parameters('newLabName'), '/', parameters('testBoxTemplateName'))]",
-    "goldenImageTemplateResourceName": "[concat(parameters('newLabName'), '/', parameters('goldenImageTemplateName'))]"
+    "goldenImageTemplateResourceName": "[concat(parameters('newLabName'), '/', parameters('goldenImageTemplateName'))]",
   },
   "resources": [
     {
