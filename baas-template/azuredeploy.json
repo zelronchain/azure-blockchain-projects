@@ -83,12 +83,7 @@
       "metadata": {
         "description": "Set 'artifact repository': the Git repo type."
       }
-    }, 
-  "variables": {
-    "devTemplateResourceName": "[concat(parameters('newLabName'), '/', parameters('devBoxTemplateName'))]",
-    "testTemplateResourceName": "[concat(parameters('newLabName'), '/', parameters('testBoxTemplateName'))]",
-    "goldenImageTemplateResourceName": "[concat(parameters('newLabName'), '/', parameters('goldenImageTemplateName'))]"
-  }
+    } 
   },
   "resources": [
     {
