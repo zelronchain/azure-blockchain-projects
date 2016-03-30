@@ -15,7 +15,8 @@
       "displayName": "Admin User Account",
       "description": "Needs to be the same account name for the host",
       "allowEmpty": false
-    },
+    }
+   },
    "runCommand": {
     "commandToExecute": "[concat('sh install_manifold.sh ', parameters('adminUsername'))]"
   }

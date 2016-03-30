@@ -10,7 +10,6 @@
   "iconUri": "https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-monero/labArtifact.png",
   "targetOsType": "Linux",
    "parameters": {
-    
     "installMethod": {
       "type": "string",
       "defaultValue": "Download_Binaries",
@@ -20,7 +19,8 @@
       "metadata": {
         "description": "Method to install Monero. Download_Binaries: download official binaries"
       }
-    },
+    }
+   },
    "runCommand": {
     "commandToExecute": "[concat('sh build_monero.sh ', parameters('installMethod'))]"
   }
