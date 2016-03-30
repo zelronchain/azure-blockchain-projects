@@ -14,7 +14,7 @@
      "installMethod": {
       "type": "string",
 	 "defaultValue": "From_Source",
-      "displayName": "Method to install Blitz full Blockchain Node from source",
+      "displayName": "Method to install Blitz full Blockchain Node from source"
     }
   },
   "runCommand": {
