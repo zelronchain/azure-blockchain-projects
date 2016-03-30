@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
+  "title": "Manifold Platform Endpoint on CentOS",
+  "description": "Add a Manifold node to network in the Lab",
+  "tags": [
+    "Manifold",
+    "Blockchain",
+    "Linux"
+  ],
+  "iconUri": "https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-manifold/labArtifact.png",
+  "targetOsType": "Linux",
+   "parameters": {
+    "adminUserName": {
+      "type": "string",
+      "displayName": "Admin User Account",
+      "description": "Needs to be the same account name for the host",
+      "allowEmpty": false
+    },
+   "runCommand": {
+    "commandToExecute": "[concat('sh install_manifold.sh ', parameters('adminUsername'))]"
+  }
+}
+

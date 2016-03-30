@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
+  "title": "Jumbucks on Linux",
+  "description": "Add a Jumbucks node to network in the Lab",
+  "tags": [
+    "Jumbucks",
+    "Blockchain",
+    "Linux"
+  ],
+  "iconUri": "https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-jumbucks/labArtifact.png",
+  "targetOsType": "Linux",
+   "parameters": {
+    "adminUserName": {
+      "type": "string",
+      "displayName": "Admin User Account",
+      "description": "Needs to be the same account name for the host",
+      "allowEmpty": false
+    },
+    "installMethod": {
+      "type": "string",
+      "displayName": "Method to install Jumbucks. From_Binaries: Official binaries.  From_Source: Official Jumbucks repo on GitHub.",
+      "defaultValue": "From_Binaries",
+      "allowedValues": [
+        "From_Binaries",
+        "From_Source"
+      ]
+    }
+  },
+   "runCommand": {
+    "commandToExecute": "[concat('sh build_jbs.sh ', parameters('installMethod'), ' ', parameters('adminUsername'))]"
+  }
+}
+
