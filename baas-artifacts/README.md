@@ -14,7 +14,7 @@ To add the Blockchain as a Service Artifact Library to your Azure DevTest lab is
 
 5.	Name your repository.
 6. The Git Clone URI is: `https://github.com/Azure/azure-blockchain-projects.git`
-7. The Folder Path is: `bass-artifacts`
+7. The Folder Path is: `baas-artifacts`
 8. The Branch can be blank or `master`
 9. The Personal Access Token is: `<INSERT YOUR PERSONAL ACCESS TOKEN>` *see below if you don't have one*
 
