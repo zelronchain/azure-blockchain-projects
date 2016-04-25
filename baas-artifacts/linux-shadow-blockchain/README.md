@@ -1,5 +1,41 @@
 # Shadow Public Blockchain Node
 
+This lab will have you create a public node Shadow Blockchain in Azure.<br>
+
+Before starting the tutorial, you will have to "Adding Blockchain Artifact Library to Azure DevTest Labs" first. https://github.com/HyperSpaceChain/azure-blockchain-projects/blob/master/baas-artifacts/README.md <br>
+
+Follow these very simple steps:<br>
+1. Locate DevTest labs. You may need to Browse> for it in the Azure portal left hand Nav <br>
+![](assets/1.png)<br>
+<br>
+2. Simply click on the following: (Click to see a larger image.) <br>
+    2.1. Lab VM Name, Username, Password will do as you wish. <br>
+    2.2. VM Size allows you to adjust the performance of the virtual machine. <br>
+![](assets/2.png)<br>
+<br>
+![](assets/3.png)<br>
+<br>
+3. Time to generate a lab vm is about 15 minutes. <br>
+![](assets/4.png)<br>
+<br>
+4. Copy the IP or DNS address so you can SSH into it <br>
+*If you do not have SSH capabilities you can install a tool like Putty http://www.putty.org/ while you are waiting <br>
+5. Open a SSH client like PuTTY and paste your node IP or DNS address in to connect. <br>
+![](assets/5.png)<br>
+<br>
+6. Login using your admin account. <br>
+
+7. shadow account command is as follows: : shadowcoind <br>
+8. For example we will try to type the following: : shadowcoind getinfo <br>
+![](assets/6.png)<br>
+<br>
+9. To view the command of 'shadow coin, enter the following: <br>
+shadowcoind help
+shadowcoind -?
+
+<br>
+<br>
+
 This Microsoft Azure template deploys a single Shadow client which will connect to the public Shadow network.
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fshadow-on-ubuntu%2Fazuredeploy.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/></a>
