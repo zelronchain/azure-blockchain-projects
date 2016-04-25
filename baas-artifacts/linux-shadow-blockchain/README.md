@@ -8,7 +8,7 @@ Follow these very simple steps:<br>
 1. Locate DevTest labs. You may need to Browse> for it in the Azure portal left hand Nav <br>
 ![](assets/1.png)<br>
 <br>
-2. Simply click on the following: (Click to see a larger image.) <br>
+2. Simply click on the following: (Right-click to open a new window to show the big picture.)<br>
     2.1. Lab VM Name, Username, Password will do as you wish. <br>
     2.2. VM Size allows you to adjust the performance of the virtual machine. <br>
 ![](assets/2.png)<br>
@@ -30,7 +30,7 @@ Follow these very simple steps:<br>
 ![](assets/6.png)<br>
 <br>
 9. To view the command of 'shadow coin, enter the following: <br>
-shadowcoind help
+shadowcoind help <br>
 shadowcoind -?
 
 <br>
