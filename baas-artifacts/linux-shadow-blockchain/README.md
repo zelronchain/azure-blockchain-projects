@@ -29,7 +29,7 @@ Follow these very simple steps:<br>
 8. For example we will try to type the following: : shadowcoind getinfo <br>
 ![](assets/6.png)<br>
 <br>
-9. To view the command of 'shadow coin, enter the following: <br>
+9. To view the command of 'shadowcoind', enter the following: <br>
 shadowcoind help <br>
 shadowcoind -?
 
