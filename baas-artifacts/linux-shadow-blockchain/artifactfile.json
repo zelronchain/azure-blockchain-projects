@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
-  "title": "Shadow BlockChain (Stealth on the blockchain)",
-  "description": "Add an Linux Shadow node to the Lab",
+  "title": "Shadow(Stealth on the blockchain)",
+  "description": "Add an Linux Shadow Public node to the Lab",
   "tags": [
     "Shadow",
     "Blockchain",
@@ -9,18 +9,15 @@
   ],
   "iconUri": "https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-shadow-blockchain/SDCartifact.png",
   "targetOsType": "Linux",
-  "parameters": {
-     "installMethod": {
+   "parameters": {
+    "adminUserName": {
       "type": "string",
-      "displayName": "Method to install Shadow. From_PPA: unofficial community bianaries.  From_Source: official Shadow repo on GitHub.",
-      "defaultValue": "From_Source",
-      "allowedValues": [
-        "From_PPA",
-        "From_Source"
-      ]
+      "displayName": "Admin User Account",
+      "description": "Needs to be the same account name for the host",
+      "allowEmpty": false
     }
   },
-  "runCommand": {
-    "commandToExecute": "[concat('sh', ' ', 'build_syscoin.sh', ' ', parameters('installMethod'))]"
+   "runCommand": {
+    "commandToExecute": "[concat('sh', ' ', 'build_syscoin.sh', ' ', parameters('adminUserName'))]"
   }
 }

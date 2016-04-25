@@ -6,7 +6,7 @@ echo "initializing Shadow installation"
 date
 ps axjf
 
-AZUREUSER=$2
+AZUREUSER=$1
 HOMEDIR="/home/$AZUREUSER"
 SHADOWPATH="$HOMEDIR/.shadowcoin"
 VMNAME=`hostname`
@@ -16,7 +16,7 @@ echo "User Shadow path: $SHADOWPATH"
 echo "vmname: $VMNAME"
 
 
-if [ $1 = 'From_Source' ]; then
+if [ $1 = '$AZUREUSER' ]; then
 ## Compile from Source
 sudo apt-get update
 sudo apt-get -y install git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev unzip pwgen
