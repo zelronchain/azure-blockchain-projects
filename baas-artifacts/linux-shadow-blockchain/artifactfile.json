@@ -18,6 +18,6 @@
     }
   },
    "runCommand": {
-    "commandToExecute": "[concat('sh', ' ', 'build_syscoin.sh', ' ', parameters('adminUserName'))]"
+    "commandToExecute": "[concat('sh', ' ', 'build_shadow.sh', ' ', parameters('adminUserName'))]"
   }
 }
