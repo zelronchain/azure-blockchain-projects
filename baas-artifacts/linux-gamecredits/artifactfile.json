@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
+  "title": "Gamecredits (Gaming on the blockchain)",
+  "description": "Add an Linux Gamecredits node to the Lab",
+  "tags": [
+    "Gamecredits",
+	"Gaming",
+	"P2P",
+    "Blockchain",
+    "Linux"
+  ],
+  "iconUri": "https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-gamecredits/gamecreditsArtifact.png",
+  "targetOsType": "Linux",
+  "parameters": {
+     "installMethod": {
+      "type": "string",
+      "displayName": "Method to install Gamecredits. From_PPA: unofficial community bianaries.  From_Source: official Gamecredits repo on GitHub.",
+      "defaultValue": "From_Source",
+      "allowedValues": [
+        "From_PPA",
+        "From_Source"
+      ]
+    }
+  },
+  "runCommand": {
+    "commandToExecute": "[concat('sh', ' ', 'build_gamecredits.sh', ' ', parameters('installMethod'))]"
+  }
+}
