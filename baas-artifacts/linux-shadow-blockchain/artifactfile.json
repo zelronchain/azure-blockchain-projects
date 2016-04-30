@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
-  "title": "Shadow(Stealth on the blockchain)",
-  "description": "Add an Linux Shadow Public node to the Lab",
+  "title": "Shadow(Privacy on the Blockchain)",
+  "description": "Add an Linux Shadow node to the Lab",
   "tags": [
     "Shadow",
     "Blockchain",
