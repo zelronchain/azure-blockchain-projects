@@ -102,7 +102,7 @@ o attachOne.sh – attach console
 
 
 
-- 9. Select Go-Ethereum-Linux as your artifact 
+- 9. Select Go-Ethereum-Homestead as your artifact 
 
 ![](assets/vmArtifacts.png)
 
