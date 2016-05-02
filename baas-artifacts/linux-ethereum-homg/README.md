@@ -22,17 +22,20 @@ Lab initialization parameters:
 *Genesis Seed*
 
     {
+     "config": {
+                "homesteadBlock": 10
+        },
      "alloc": {},
      "nonce": "0x0000000000000042",
      "difficulty": "0x0400",
-     "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+     "mixhash": "0x00000000000000000000000000000000000000647572616c65787365646c6578",
      "coinbase": "0x0000000000000000000000000000000000000000",
      "timestamp": "0x00",
      "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
      "extraData": "0x11bbe8db4e347b4e8c937c1c8370e4b5ed33adb3db69cbdb7a38e1e50b1b82ee",
      "gasLimit": "0x4c4b40"
     }
-* Startup: `geth --genesis lab-seed.json --rpc --rpcport "8080" --rpccorsdomain "*" --datadir "chains/devtest" --port "2402" --ipcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" --rpcapi "db,eth,net,web3" --networkid 1001201 console`
+* Startup: `geth --rpc --rpcport "8080" --rpccorsdomain "*" --datadir "chains/devtest" --port "2402" --ipcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" --rpcapi "db,eth,net,web3" --networkid 1001201 --datadir init "chains/devtest"`
 * Seed files and startup scripts copied during installation
 o Seed-blockchain.sh – run the blockchain for 1st time
 o Start-blockchain.sh – run after seeded
