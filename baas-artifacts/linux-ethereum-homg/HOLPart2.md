@@ -7,4 +7,4 @@ This lab will have you create your first SmartContract application.Lab – Ste
 
 ![AzureNetworkSecurityGroup](https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-ethereum-homg/assets/netsecuritygroup.png)
 
-![AzureNetworkSecurityGroup](https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-ethereum-homg/assets/ApplyToNIC.png)
+![AzureNetworkSecurityGroup](https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-ethereum-homg/assets/applytonic.png)
