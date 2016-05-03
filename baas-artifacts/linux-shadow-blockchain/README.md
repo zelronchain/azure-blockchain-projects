@@ -25,23 +25,26 @@ Follow these very simple steps:<br>
 <br>
 6. Login using your admin account. <br>
 
-7. shadow account command is as follows: : shadowcoind <br>
-8. For example we will try to type the following: : shadowcoind getinfo <br>
+   6.1. Shadow account command is as follows: : shadowcoind <br>
+   6.2. For example we will try to type the following: : shadowcoind getinfo <br>
 ![](assets/6.png)<br>
 <br>
-9. To view the command of 'shadowcoind', enter the following: <br>
+   6.3 To view the command of 'shadowcoind', enter the following: <br>
 shadowcoind help <br>
-shadowcoind -?
-
 <br>
+7. Shadow configuration file is ~/.shadowcoin/shadowcoin.conf <br>
+   7.1. To access the settings, type the following: : <br>
+		nano ~/.shadowcoin/shadowcoin.conf<br>
+![](assets/7.png)<br>
+   7.2. To view the command of 'shadowcoin.conf', enter the following: <br>
+shadowcoind -? <br>
 <br>
-
 This Microsoft Azure template deploys a single Shadow client which will connect to the public Shadow network.
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fshadow-on-ubuntu%2Fazuredeploy.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/></a>
 <a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fshadow-on-ubuntu%2Fazuredeploy.json" target="_blank"><img src="http://armviz.io/visualizebutton.png"/></a>
 
-For more information, <br>
+For more informations, <br>
 https://shadowproject.io <br>
 https://bitcointalk.org/index.php?topic=745352 <br>
 # Template Parameters
