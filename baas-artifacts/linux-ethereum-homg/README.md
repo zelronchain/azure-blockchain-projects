@@ -161,3 +161,5 @@ o attachOne.sh – attach console
 - 30. Lab Complete!
 
 Ready for Lab 2?
+
+https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-ethereum-homg/HOLPart2.md 
