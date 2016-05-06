@@ -160,3 +160,4 @@ o attachOne.sh – attach console
 
 - 30. Lab Complete!
 
+Ready for Lab 2?
