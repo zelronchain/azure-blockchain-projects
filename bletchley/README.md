@@ -1,4 +1,4 @@
 # bletchley
 
-Confidential - Microsoft Blockchain Architecture
+eyes - only ... just kidding, it is released
 
