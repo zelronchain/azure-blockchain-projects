@@ -105,7 +105,7 @@ Public blockchains like Bitcoin, Ethereum and others will define their protocol 
 
 ![PublicNode](images/bcmono.png)
 
-For example, in financial services, a distributed ledger that meets the performance, security, privacy, regulatory and functional requirements for a derivative contract will be different from one that does cross boarder payments.  So there will need to be two separate distributed ledgers operating those networks.  This will NOT require a 1-1 mapping between product and blockchain since similar products can reside on the same distributed ledger.
+For example, in financial services, a distributed ledger that meets the performance, security, privacy, regulatory and functional requirements for a derivative contract will be different from one that does cross border payments.  So there will need to be two separate distributed ledgers operating those networks.  This will NOT require a 1-1 mapping between product and blockchain since similar products can reside on the same distributed ledger.
 
 ***Enterprise Consortium Node***
 
