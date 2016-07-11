@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
+  "title": "BER on Linux",
+  "description": "Add a BER node to network in the Lab",
+  "tags": [
+    "BER",
+    "Bloq",
+    "Enterprise",
+    "Router",
+    "Blockchain",
+    "Linux"
+  ],
+  "iconUri": "https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-ber/labArtifact.png",
+  "targetOsType": "Linux",
+   "runCommand": {
+    "commandToExecute": "[concat('sh build_monero.sh ')]"
+  }
+}
