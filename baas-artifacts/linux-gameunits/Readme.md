@@ -5,7 +5,7 @@ This template delivers the Gameunits network to your VM in about 20 minutes. Eve
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fgameunits-on-ubuntu%2Fazuredeploy.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/></a>
 <a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fgameunits-on-ubuntu%2Fazuredeploy.json" target="_blank"><img src="http://armviz.io/visualizebutton.png"/></a>
 
-![Gameunits](http://i.imgur.com/Cokp8iC.png "Gameunits")
+![Gameunits](https://raw.githubusercontent.com/gameunits/gameunits-logos/master/artwork.png "Gameunits")
 
 # What is Gameunits?
 ----------------
