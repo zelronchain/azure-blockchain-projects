@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
+  "title": "Gameunits is an Open Source Proof of Stake Gaming Cryptocurrency.",
+  "description": "Easy Add an Linux Gameunits node to the Lab",
+  "tags": [
+    "Gameunits",
+	"Social",
+	"P2P",
+    "Blockchain",
+	"Gaming",
+	"Cryptocurrency",
+    "Linux"
+  ],
+  "iconUri": "https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-gameunits/gameunitsArtifact.png",
+  "targetOsType": "Linux",
+  "parameters": {
+     "installMethod": {
+      "type": "string",
+      "displayName": "Method to install Gameunits. From_PPA: official bianaries.  From_Source: official Gameunits repo on GitHub.",
+      "defaultValue": "From_Source",
+      "allowedValues": [
+        "From_PPA",
+        "From_Source"
+      ]
+    }
+  },
+  "runCommand": {
+    "commandToExecute": "[concat('sh', ' ', 'build_gameunits.sh', ' ', parameters('installMethod'))]"
+  }
+}
