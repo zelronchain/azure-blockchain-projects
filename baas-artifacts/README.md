@@ -1,5 +1,9 @@
 #   Adding Blockchain Artifact Library to Azure DevTest Labs
 
+The best and fastest way to use Blockchain in a DevTest Lab is to create a Blockchain DevTest Lab directly from the Azure Marketplace.  Simply type "Blockchain" into the search and select a new DevTestLabs for Blockchain as a Service.
+
+![](https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/assets/DevTestBlockchain.png)
+
 To add the Blockchain as a Service Artifact Library to your Azure DevTest lab is easy.  Follow these simple steps:
 
 1. Sign into the Azure portal: [http://portal.azure.com](http://portal.azure.com)
