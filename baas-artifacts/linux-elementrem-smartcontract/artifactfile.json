@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
+  "title": "Elementrem SmartContract BlockChain",
+  "description": "Linux Elementrem Public and Private Network.",
+  "tags": [
+    "elementrem",
+	"ethereum",
+    "blockchain",
+    "linux"
+  ],
+  "iconUri": "https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/img/ele_small_logo.png",
+  "targetOsType": "Linux",
+   "parameters": {},
+   "runCommand": {
+    "commandToExecute": "[concat('sh', ' ', 'build_elementrem.sh')]"
+  }
+}
