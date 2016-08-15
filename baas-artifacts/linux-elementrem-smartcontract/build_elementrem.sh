@@ -52,6 +52,8 @@ cd
 cd $HOMEDIR
 cd go-elementrem/build/bin
 sudo cp gele /usr/bin
+cd $HOMEDIR
+rm -rf go-elementrem
 
 # Install Solidity Programming Language
 cd $HOMEDIR

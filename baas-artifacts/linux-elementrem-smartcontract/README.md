@@ -25,7 +25,9 @@ Based on your organization's specific needs, Elementrem can customize your smart
 
 For more Informations, 		
 http://www.elementrem.org/		
-https://github.com/elementrem/
+https://github.com/elementrem/		
+
+[**Gele Console Commands. Click Here**](https://github.com/elementrem/go-elementrem/blob/master/gele_command_readme.md)		
 
 ***
 
