@@ -17,7 +17,9 @@ If you specify the right conditions, your requirements will be handled automatic
 
 Based on your organization's specific needs, Elementrem can customize your smart contract services by offering both Public node-(Main network) and Private node-based BlockChain tools.
 
-For more Informations, http://www.elementrem.org/
+For more Informations, 		
+http://www.elementrem.org/		
+https://github.com/elementrem/
 
 ***
 

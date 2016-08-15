@@ -1,17 +1,18 @@
 {
   "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
-  "title": "Elementrem SmartContract BlockChain",
-  "description": "Linux Elementrem Public and Private Network.",
-  "tags": [
-    "elementrem",
-	"ethereum",
-    "blockchain",
-    "linux"
-  ],
-  "iconUri": "https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/img/ele_small_logo.png",
+  "title": "Elementrem",
+  "description": "Elementrem SmartContract(Private and Public Network.)",
+  "iconUri": "https://github.com/elementrem/azure-blockchain-projects/blob/master/baas-artifacts/linux-elementrem-smartcontract/img/ele_small_logo.png?raw=true",
   "targetOsType": "Linux",
-   "parameters": {},
+   "parameters": {
+    "adminUserName": {
+      "type": "string",
+      "displayName": "Admin User Account(Needs to be the same account name for the host)",
+      "description": "Needs to be the same account name for the host",
+      "allowEmpty": false
+    }
+  },
    "runCommand": {
-    "commandToExecute": "[concat('sh', ' ', 'build_elementrem.sh')]"
+    "commandToExecute": "[concat('sh', ' ', 'build_elementrem.sh', ' ', parameters('adminUserName'))]"
   }
 }

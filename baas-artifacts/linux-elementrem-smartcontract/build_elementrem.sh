@@ -1,16 +1,27 @@
 #!/bin/bash
+
+# print commands and arguments as they are executed
 set -x
 
 echo "initializing Elementrem installation"
-
 date
 ps axjf
 
+# Parameters
+
+AZUREUSER=$1
+HOMEDIR="/home/$AZUREUSER"
+VMNAME=`hostname`
+echo "User: $AZUREUSER"
+echo "User home dir: $HOMEDIR"
+echo "vmname: $VMNAME"
+
 # Initialize
+cd $HOME
 sudo apt -y update
 sudo apt -y upgrade
 sudo apt-get install -y git curl wget
-cd $HOME
+
 
 # Install go-lang
 sudo apt-get install -y build-essential libgmp3-dev golang git curl
