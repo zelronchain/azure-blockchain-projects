@@ -5,12 +5,16 @@
 ***
 
 - [T/RX Element Lab](#trx-element-lab--step-by-step)      
-- [Deploying simple contract Lab](#deploying-simple-contract-lab--step-by-step)
+- [Deploying a simple contract Lab](#deploying-a-simple-contract-lab--step-by-step)
 
 ***
 
 - Recommend that Ubuntu Server 16.04 LTS		
-- VM installation process takes approximately 30 minutes.		
+- VM(Virtual machine) installation process takes approximately 30 minutes.	
+- VM size must be at least A1. 		
+- Elementrem Network listening port = 30707 (Using the `Azure Network security group` to open the port.)
+
+***
 
 As well as Due to the highly-developed protocol contracts, all the information is reliable even in a computer environment that can not be trusted. This technology can definitely extend your application.
 Provides platform for automating, refining, managing complex processes. Simplification of complex financial derivatives, intelligent and autonomous machines collaboration IoT devices. And You can use the computing power beyond the supercomputer. 
@@ -31,13 +35,13 @@ https://github.com/elementrem/
 
 **1. Select the desired node Elementrem.**
 - Elementrem public node
-Run `$ ./start public.sh`
+Run `$ sh ./start_public.sh`
 - Elementrem private node
-Run `$ ./start private.sh`
+Run `$ sh ./start_private.sh`
 
 During mining or Block Sync, difficult to enter the command due to  a lot of log information.   
 However, If you duplicate the session(open up another SSH session connected to the same host.), it is possible to ipc connection.   
-In another SSH session `$ ./attach public` or `$ ./attach private`
+In another SSH session `$ sh ./attach_public.sh` or `$ sh ./attach_private.sh`
 
 **2. Create an account.**   
 `> personal.newAccount()`   
@@ -79,7 +83,7 @@ Azure VM is very difficult to mining.
 It is recommended to use an extra [GPU mining](https://github.com/elementrem/webthree-umbrella/releases) or purchasing from a cryptocurrency market
 
 - Private node    
-Run `$ miner.start()`   At least, VM size is more than A1.      
+Run `$ miner.start()`		     
 More mining Infomations, https://github.com/elementrem/go-elementrem/blob/master/miner.md   
 ***Transaction will be occurred during the execution of at least one or more of the mining operation. Recommended more than two.***
 

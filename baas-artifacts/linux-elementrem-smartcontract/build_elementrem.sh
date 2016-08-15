@@ -46,7 +46,7 @@ git clone https://github.com/elementrem/go-elementrem/
 # Build elementrem
 cd  go-elementrem
 make gele
-cd 
+cd
 
 # gele path to usr/bin/
 cd go-elementrem/build/bin
