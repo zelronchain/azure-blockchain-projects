@@ -49,10 +49,12 @@ make gele
 cd
 
 # gele path to usr/bin/
+cd $HOMEDIR
 cd go-elementrem/build/bin
 sudo cp gele /usr/bin
 
 # Install Solidity Programming Language
+cd $HOMEDIR
 cd 
 mkdir solidity
 cd solidity
