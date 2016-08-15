@@ -27,6 +27,8 @@ For more Informations,
 http://www.elementrem.org/		
 https://github.com/elementrem/		
 
+***
+
 [**Gele Console Commands. Click Here**](https://github.com/elementrem/go-elementrem/blob/master/gele_command_readme.md)		
 
 ***
@@ -120,13 +122,13 @@ Run `> ele.getTransaction("<transaction>")`
 ***Keep in mind that This contract will consume approximately 0.006 Element.***
 
 
-You should make sure whether the solidity compiler is applied or not.
+You should make sure whether the ***solidity compiler*** is applied or not.
 ```
 > ele.getCompilers()
 ["Solidity"]
 ```
 
-If the solidity is not applied, You can apply it manually.
+If the ***solidity*** is not applied, You can apply it manually.
 ```
 > admin.setSolc("/usr/bin/solc")
 "solc, the solidity compiler commandline interface\nVersion: 0.3.6-0/None-Linux/g++\n\npath: /usr/bin/solc"
