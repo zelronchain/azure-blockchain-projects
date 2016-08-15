@@ -16,8 +16,16 @@ echo "User: $AZUREUSER"
 echo "User home dir: $HOMEDIR"
 echo "vmname: $VMNAME"
 
+# Downloads scripts
+cd $HOMEDIR
+wget https://raw.githubusercontent.com/elementrem/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/attach_private.sh
+wget https://raw.githubusercontent.com/elementrem/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/attach_public.sh
+wget https://raw.githubusercontent.com/elementrem/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/start_private.sh
+wget https://raw.githubusercontent.com/elementrem/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/start_public.sh
+wget https://raw.githubusercontent.com/elementrem/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/private_prerequisites.json
+
 # Initialize
-cd $HOME
+cd $HOMEDIR
 sudo apt -y update
 sudo apt -y upgrade
 sudo apt-get install -y git curl wget
@@ -56,10 +64,5 @@ sudo dpkg -i solc_0.3.6-0ubuntu1~xenial_amd64.deb
 cd ..
 rm -rf solidity
 
-# Downloads scripts
-cd $HOME
-wget https://raw.githubusercontent.com/elementrem/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/attach_private.sh
-wget https://raw.githubusercontent.com/elementrem/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/attach_public.sh
-wget https://raw.githubusercontent.com/elementrem/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/start_private.sh
-wget https://raw.githubusercontent.com/elementrem/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/start_public.sh
-wget https://raw.githubusercontent.com/elementrem/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/private_prerequisites.json
+# Initialize
+cd $HOMEDIR

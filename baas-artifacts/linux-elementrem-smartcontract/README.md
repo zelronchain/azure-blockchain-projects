@@ -4,11 +4,13 @@
 
 ***
 
-Recommend that Ubuntu Server 16.04 LTS
 - [T/RX Element Lab](#trx-element-lab--step-by-step)      
 - [Deploying simple contract Lab](#deploying-simple-contract-lab--step-by-step)
 
 ***
+
+- Recommend that Ubuntu Server 16.04 LTS		
+- VM installation process takes approximately 30 minutes.		
 
 As well as Due to the highly-developed protocol contracts, all the information is reliable even in a computer environment that can not be trusted. This technology can definitely extend your application.
 Provides platform for automating, refining, managing complex processes. Simplification of complex financial derivatives, intelligent and autonomous machines collaboration IoT devices. And You can use the computing power beyond the supercomputer. 
@@ -105,7 +107,7 @@ Run `> ele.getTransaction("<transaction>")`
 
 ***
 
-## Deploying simple contract Lab – Step by Step
+## Deploying a simple contract Lab – Step by Step
 
 ***
 
