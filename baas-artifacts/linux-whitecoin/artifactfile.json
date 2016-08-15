@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
+  "title": "XWC is an Open Source Proof of Stake Social Cryptocurrency.",
+  "description": "Add an Linux Whitecoin node to the Lab",
+  "tags": [
+    "Whitecoin",
+	"Social",
+	"P2P",
+    "Blockchain",
+    "Linux"
+  ],
+  "iconUri": "https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-whitecoin/whitecoinArtifact.png",
+  "targetOsType": "Linux",
+  "parameters": {
+     "installMethod": {
+      "type": "string",
+      "displayName": "Method to install Whitecoin. From_PPA: official bianaries.  From_Source: official Whitecoin repo on GitHub.",
+      "defaultValue": "From_Source",
+      "allowedValues": [
+        "From_PPA",
+        "From_Source"
+      ]
+    }
+  },
+  "runCommand": {
+    "commandToExecute": "[concat('sh', ' ', 'build_whitecoin.sh', ' ', parameters('installMethod'))]"
+  }
+}
