@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
   "title": "Elementrem",
   "description": "Elementrem SmartContract(Provide a private and public network)",
-  "iconUri": "https://github.com/elementrem/azure-blockchain-projects/blob/master/baas-artifacts/linux-elementrem-smartcontract/img/ele_small_logo.png?raw=true",
+  "iconUri": "https://github.com/Azure/azure-blockchain-projects/blob/master/baas-artifacts/linux-elementrem-smartcontract/img/ele_small_logo.png?raw=true",
   "targetOsType": "Linux",
    "parameters": {
     "adminUserName": {

@@ -11,7 +11,7 @@
 
 - Recommend that Ubuntu Server 16.04 LTS		
 - VM(Virtual machine) installation process takes approximately 30 minutes.	
-- VM size must be at least A1. 		
+- VM size must be at least A1. ***(If you use A0, The build will fail.)***		
 - Elementrem Network listening port = 30707 (Using the `Azure Network security group` to open the port.)
 
 ***
@@ -193,9 +193,11 @@ You will need to enter the password you entered when first importing the private
 
 ```
 > var smcontract = contract.new(initializer, callback);
-Contract transaction send: TransactionHash: 0x111111111111111111111111111111111111111111 waiting to be confirmed……
+Contract transaction send: TransactionHash: 0xe37f1551e9daec634f7a87259f5a0b4a3c529f102c092713a48ff10456d96310 waiting to be confirmed……...
+
         // Wait until the transaction is confirmed.
         // Transaction will be occurred during the execution of at least one or more of the mining operation. Recommended more than two.
+
 Contract confirmed!!!
 [object Object]
 ```
@@ -205,10 +207,11 @@ In order for us to write to the entryLog of the contract and have that update st
 
 ```
 > smcontract.setEntry.sendTransaction("Hello Elementrem!", {from: ele.accounts[0]});
-"0x111111111111111111111111111111111111111111111111111111111111111111"
+"0x1d005031f0fc437cb4d797fd9125ffe1a2fe3cdd9e6068d21a34e6ff4b1b86e6"
 ```
 
 Now if we read from the contract:
+(Wait until transaction has confirmed).
 
 ```
 > smcontract.getMyEntry();
