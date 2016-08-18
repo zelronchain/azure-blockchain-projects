@@ -1,1 +1,1 @@
-gele attach ipc:$HOME/.private_elementrem/gele.ipc
+sudo gele attach ipc:$HOME/.private_elementrem/gele.ipc

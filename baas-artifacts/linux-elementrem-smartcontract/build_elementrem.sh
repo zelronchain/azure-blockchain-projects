@@ -78,3 +78,4 @@ rm -rf solidity
 # Initialize
 cd $HOMEDIR
 gele --datadir "$HOMEDIR/.private_elementrem" init private_prerequisites.json
+echo "Elementrem CLI gele"
