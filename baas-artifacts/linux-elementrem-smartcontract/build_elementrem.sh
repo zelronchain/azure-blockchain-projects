@@ -77,4 +77,4 @@ rm -rf solidity
 
 # Initialize
 cd $HOMEDIR
-gele --datadir "$HOME/.private_elementrem" init private_prerequisites.json
+gele --datadir "$HOMEDIR/.private_elementrem" init private_prerequisites.json
