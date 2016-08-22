@@ -16,6 +16,14 @@
 
 ***
 
+### Artifact Parameters
+
+When you launch the installation of the VM, you need to specify the following parameters:
+* `Admin User Account`: It must be the same account name for the host.
+* `Private Block Extra-data`: This unique string specifies the Private-network of your own. communication between a peer and a peer occurs until after the same `Private Block Extra-data`
+
+***
+
 As well as Due to the highly-developed protocol contracts, all the information is reliable even in a computer environment that can not be trusted. This technology can definitely extend your application.
 Provides platform for automating, refining, managing complex processes. Simplification of complex financial derivatives, intelligent and autonomous machines collaboration IoT devices. And You can use the computing power beyond the supercomputer. 
 
