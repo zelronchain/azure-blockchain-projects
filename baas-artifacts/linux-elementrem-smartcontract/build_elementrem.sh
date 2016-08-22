@@ -75,7 +75,22 @@ sudo dpkg -i solc_0.3.6-0ubuntu1~xenial_amd64.deb
 cd ..
 rm -rf solidity
 
-# Initialize
+# Initialize private_genesis_Block
+exdata=`echo "$2" | xxd -plain -c 250`
+
+echo "{
+  \"alloc\": {},
+  \"nonce\": \"0x0000000000000000\",
+  \"difficulty\": \"0x020000\",
+  \"mixhash\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",
+  \"coinbase\": \"0x0000000000000000000000000000000000000000\",
+  \"timestamp\": \"0x00\",
+  \"parentHash\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",
+  \"extraData\": \"0x$exdata\",
+  \"gasLimit\": \"0x2FEFD8\"
+}" > private_prerequisites.json
+
+# Initialize private network
 cd $HOMEDIR
 gele --datadir "$HOMEDIR/.private_elementrem" init private_prerequisites.json
 echo "Elementrem CLI gele"

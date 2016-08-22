@@ -10,9 +10,17 @@
       "displayName": "Admin User Account(Needs to be the same account name for the host)",
       "description": "Needs to be the same account name for the host",
       "allowEmpty": false
+    },
+	"privateGenesis": {
+	"type": "string",
+	"maxLength": 30,
+	"displayName": "Private Block Extra-data(This unique string specifies the Private-network of your own)",
+	"defaultValue": "Cannot contain non-ASCII or special characters",
+	"description": "This unique string specifies the network of your own",
+	"allowEmpty": false
     }
   },
    "runCommand": {
-    "commandToExecute": "[concat('sh', ' ', 'build_elementrem.sh', ' ', parameters('adminUserName'))]"
+    "commandToExecute": "[concat('sh', ' ', 'build_elementrem.sh', ' ', parameters('adminUserName'), ' ', parameters('privateGenesis'))]"
   }
 }
