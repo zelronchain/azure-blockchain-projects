@@ -6,7 +6,7 @@
 
 - [T/RX Element Lab](#trx-element-lab--step-by-step)      
 - [Deploying a simple contract Lab](#deploying-a-simple-contract-lab--step-by-step)
-- [Elementrem meteor wallet Lab – Step by Step](#elementrem-meteor-wallet lab--step by step)		
+- [Elementrem meteor wallet Lab – Step by Step](#elementrem-meteor-wallet-lab--step-by-step)		
 
 ***
 
@@ -250,7 +250,7 @@ Enter the "Ctrl + C". Come back to the prompt.
 
 Then you need to setting a web3 provider.		
 - Run `nano $HOME/meteor-dapp-wallet/app/client/lib/elementrem/1_web3Init.js`		
-You can see the following items: In the fifth line.
+You can see the following items: In the fifth line.		
 `web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7075"));`
 
 Please replace the `localhost` with your public IP address. like a `http://111.111.111.111:7075`		
@@ -271,3 +271,4 @@ Run `$ sudo gele --networkid 12345 --identity "private" --datadir "$HOME/.privat
 **5. Open a browser window and access the URL for your wallet.**		
 `http://<Azure VM public IP address>:3000`		
 
+Congratulations! The Meteor wallet is now enabled.
