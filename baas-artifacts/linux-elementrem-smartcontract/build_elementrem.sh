@@ -23,6 +23,7 @@ wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/ba
 wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/start_private.sh
 wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/start_public.sh
 wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/private_prerequisites.json
+wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/meteor-wallet-setup.sh
 
 # Initialize
 cd $HOMEDIR
