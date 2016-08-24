@@ -12,7 +12,8 @@
 
 - Recommend that Ubuntu Server 16.04 LTS		
 - VM(Virtual machine) installation process takes approximately 30 minutes.	
-- VM size must be at least A1. ***(If you use A0, The build will fail.)***		
+- VM size must be at least A1. ***(If you use A0, The build will fail.)***				
+- If you run mining and meteor wallet at the same time, ***VM size must be at least A2.***		
 - Elementrem Network listening port = 30707 (Using the `Azure Network security group` to open the port.)
 
 ***
