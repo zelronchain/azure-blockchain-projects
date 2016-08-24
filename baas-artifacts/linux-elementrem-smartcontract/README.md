@@ -12,7 +12,8 @@
 
 - Recommend that Ubuntu Server 16.04 LTS		
 - VM(Virtual machine) installation process takes approximately 30 minutes.	
-- VM size must be at least A1. ***(If you use A0, The build will fail.)***		
+- VM size must be at least A1. ***(If you use A0, The build will fail.)***				
+- If you run mining and meteor wallet at the same time, ***VM size must be at least A2.***		
 - Elementrem Network listening port = 30707 (Using the `Azure Network security group` to open the port.)
 
 ***
@@ -243,18 +244,11 @@ You can run Elementrem meteor-wallet in the Azure.
 - Run `sh ./meteor-wallet-setup.sh`		
 
 **2. Setup the wallet parameter**
-- Run `cd $HOME/meteor-dapp-wallet/app && meteor`		
-
-`App running at: http: // localhost: 3000 /` Wait until this message appears....		
-Enter the "Ctrl + C". Come back to the prompt.
-
-Then you need to setting a web3 provider.		
+You need to setting a web3 provider.		
 - Run `nano $HOME/meteor-dapp-wallet/app/client/lib/elementrem/1_web3Init.js`		
 You can see the following items: In the fifth line.		
-`web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7075"));`
-
+`web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7075"));`		
 Please replace the `localhost` with your public IP address. like a `http://111.111.111.111:7075`		
-
 Be sure to save the configuration after making this change.
 
 **3. Start Elementrem meteor-wallet**
@@ -264,9 +258,11 @@ Be sure to save the configuration after making this change.
 **4. Select the desired node Elementrem.**		
 Open up another SSH session connected to the same host.		
 - Elementrem public node		
-Run `$ gele --rpc --rpcaddr 0.0.0.0 --rpccorsdomain "*" --unlock <your account> console`		
+Run `$ gele --rpc --rpcaddr 0.0.0.0 --rpccorsdomain "*" console`		
 - Elementrem private node		
-Run `$ sudo gele --networkid 12345 --identity "private" --datadir "$HOME/.private_elementrem" --rpc --rpcaddr 0.0.0.0 --rpccorsdomain "*" --unlock <your account> --nodiscover console`		
+Run `$ sudo gele --networkid 12345 --identity "private" --datadir "$HOME/.private_elementrem" --rpc --rpcaddr 0.0.0.0 --rpccorsdomain "*" --nodiscover console`		
+
+`Optional add: --unlock <yourAccount>`
 
 **5. Open a browser window and access the URL for your wallet.**		
 `http://<Azure VM public IP address>:3000`		
