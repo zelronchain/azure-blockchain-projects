@@ -228,7 +228,7 @@ Now if we read from the contract:
 "Hello Elementrem!"
 ```
 
-Congratulations! Your contract is alive and well on Elementrem blockchain.
+***Congratulations! Your contract is alive and well on Elementrem blockchain.***
 
 ***
 
@@ -236,7 +236,7 @@ Congratulations! Your contract is alive and well on Elementrem blockchain.
 
 ***
 
-![](img/elementrem-meteor-wallet.png)
+![](img/Azure-elementrem-meteor.png)
 
 You can run Elementrem meteor-wallet in the Azure. 
 
@@ -267,4 +267,14 @@ Run `$ sudo gele --networkid 12345 --identity "private" --datadir "$HOME/.privat
 **5. Open a browser window and access the URL for your wallet.**		
 `http://<Azure VM public IP address>:3000`		
 
-Congratulations! The Meteor wallet is now enabled.
+**6. Increase security through Azure Network security group**		
+`Elementrem meteor wallet` information is there and waiting to be accessed by anyone with the wit to use it. This is a matter of security.		
+`Azure Network security group` enhancements and other features will help you protect your sensitive wallet data.		
+
+e.g.:			
+![](img/azure-network-security-group-eg.png)		
+There is a `Source IP address range`		
+The source filter an be any, an IP address range, or a default tag. It specifies the incoming traffic from a specific source IP address range that will be allowed or denied by this rule.		
+Provide an address range using CIDR notation, e.g. 111.111.111.111./200 or an IP address.
+
+***Congratulations! The Meteor wallet is now enabled.***
