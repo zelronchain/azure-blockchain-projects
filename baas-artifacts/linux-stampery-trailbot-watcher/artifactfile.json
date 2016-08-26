@@ -1,0 +1,24 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
+  "title": "Trailbot Watcher",
+  "description": "Trailbot Watcher monitors your system files and logs, triggers Smart Policies upon unwanted modification and generates a __blockchain-anchored__, __immutable audit trail__ of everything happening to them.",
+  "iconUri": "https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-trailbot-watcher/labArtifact.png",
+  "targetOsType": "Linux",
+  "parameters": {
+    "adminEmail": {
+      "type": "string",
+      "metadata": {
+        "description": "Your email address."
+      }
+    },
+    "clientPubKey": {
+      "type": "string",
+      "metadata": {
+        "description": "Client public key. Please install Trailbot Client in your personal computer, open it and it will generate a key you must paste here."
+      }
+    },
+  },
+  "runCommand": {
+    "commandToExecute": "[concat('sh install.sh \"', parameters('adminEmail'), '\" ', parameters('clientPubKey'))]"
+  }
+}
