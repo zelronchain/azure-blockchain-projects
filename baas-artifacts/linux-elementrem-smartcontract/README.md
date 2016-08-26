@@ -268,13 +268,11 @@ Run `$ sudo gele --networkid 12345 --identity "private" --datadir "$HOME/.privat
 `http://<Azure VM public IP address>:3000`		
 
 **6. Increase security through Azure Network security group**		
-`Elementrem meteor wallet` information is there and waiting to be accessed by anyone with the wit to use it. This is a matter of security.
-
+`Elementrem meteor wallet` information is there and waiting to be accessed by anyone with the wit to use it. This is a matter of security.		
 `Azure Network security group` enhancements and other features will help you protect your sensitive wallet data.		
 
-
 e.g.:			
-![](img/azure-network-security-group.png)
+![](azure-network-security-group-1.png)		
 There is a `Source IP address range`		
 The source filter an be any, an IP address range, or a default tag. It specifies the incoming traffic from a specific source IP address range that will be allowed or denied by this rule.		
 Provide an address range using CIDR notation, e.g. 111.111.111.111./200 or an IP address.
