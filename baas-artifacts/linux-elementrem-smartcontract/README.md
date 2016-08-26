@@ -272,7 +272,7 @@ Run `$ sudo gele --networkid 12345 --identity "private" --datadir "$HOME/.privat
 `Azure Network security group` enhancements and other features will help you protect your sensitive wallet data.		
 
 e.g.:			
-![](azure-network-security-group-1.png)		
+![](img/azure-network-security-group-eg.png)		
 There is a `Source IP address range`		
 The source filter an be any, an IP address range, or a default tag. It specifies the incoming traffic from a specific source IP address range that will be allowed or denied by this rule.		
 Provide an address range using CIDR notation, e.g. 111.111.111.111./200 or an IP address.
