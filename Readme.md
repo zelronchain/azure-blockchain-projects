@@ -12,3 +12,5 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 ##kinakuta
 Formal verification of Smart Contracts workgroup repo.  Home to documentation, best practices and tools for improving the reliability and security of Smart Contract development.
+
+*This project has adopted the Microsoft Open Source Code of Conduct. For more information see the Code of Conduct FAQ or contact opencode@microsoft.com with any additional questions or comments.*
