@@ -8,3 +8,5 @@ Read the Short Paper here: http://research.microsoft.com/en-us/um/people/nswamy/
 F* ("f star") found here: https://github.com/FStarLang/FStar 
 
 Sobering thoughts: https://www.reddit.com/r/btc/comments/4p0gq3/why_turingcomplete_smart_contracts_are_doomed/
+
+Gitter Discussions - https://gitter.im/MicrosoftKinukuta/Lobby 
