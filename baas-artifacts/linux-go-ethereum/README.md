@@ -149,6 +149,7 @@ o attachOne.sh – attach console
     `eth.sendTransaction({from: eth.coinbase, to: "0x9652e1692177be47779a2fd5f647433c6bfeec17", value: web3.toWei(1, "ether"),gas:22000,gasPrice:web3.toWei(45,"Shannon"),data: web3.toHex('mytransaction')})`
     
 - *Change the address to another address on the network, you can create as many as you want using their "0x965332..." addresses.*
+- **NOTE:** In case you receive "account is locked" message unlock the account first by executing personal.unlockAccount("0x965332...") command and then try again (step 26)
 - 27. Now check your balance: eth.getBalance(eth.coinbase)
 - 28. Now view your transactions: Copy and paste your transaction ID that is output after the `eth.sendTransaction` command.
 - 29. Then:`eth.getTransaction("0x2820dfb6930e6f4fb7df61863661510614e4f988eb2c1e692e9c3e4fd3cf8e56")`
