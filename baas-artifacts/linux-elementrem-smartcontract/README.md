@@ -64,10 +64,10 @@ Output Account Lists `> ele.accounts`
 **3. Repeat steps 1-2 to create a second or more VM on you network**
 
 **4. Chaining Network**		
-- Public node : The whole process is handled automatically.		
-- Private node
-You need to manually connect to a peer. 
+- Public node : The whole process is handled automatically.	
+- Private node	: You need to manually connect to a peer.     
 
+***Private node chaining Method 1***	
 You can grab the peer url address for instance:		
 ```
 > admin.nodeInfo.enode
@@ -90,6 +90,15 @@ true
 ...
 ```
 
+***Private node chaining Method 2***             
+Gele supports a feature called static nodes if you have certain peers you always want to connect to. Static nodes are re-connected on disconnects. You can configure permanent static nodes by putting something like the following into `$HOME/.private_elementrem/static-nodes.json` (this should be the same folder that the chaindata and keystore folders are in)
+
+```
+[
+	"enode://bba499d08a59eb19........77b668ff1eb39d7f2ef@[::]:30707",
+	"enode://pubkey@ip:port"
+]
+```
 
 **5. Mining Element**
 - Public node   
