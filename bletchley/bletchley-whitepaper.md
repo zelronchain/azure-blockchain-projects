@@ -1,5 +1,5 @@
 #Introducing Project "Bletchley"
-*Marley Gray, Director Blockchain Business Development and Strategy - Microsoft*
+*Marley Gray, Principle Architect PM - Microsoft - Azure Blockchain Engineering*
 
 ###Microsoft's Blockchain Architecture Overview
 
@@ -115,7 +115,7 @@ A modular framework will allow consortiums to pick the best of breed components 
 
 ##Bletchley introduces Cryptlets##
 
-Cryptlets are the principal building blocks for introducing a secure blockchain middleware tier into the architecture. Given the distributed nature of blockchain, this middleware naturally functions as a service in the cloud (Azure/Azure Stack, AWS, Google, Private). 
+Cryptlets are the principal building blocks for introducing a secure blockchain middleware tier into the architecture. Given the distributed nature of blockchain, this middleware naturally functions as a service in the cloud (Azure/Azure Stack, AWS, Google, Private) and is more accurately called an Application Fabric. 
 
 In what is referred to as blockchain 1.0 & 2.0, if external data or events based on time or market conditions needs to interact with the blockchain, an “oracle” is required.  There is no standard way to supply “oracle” data securely and can quickly become an issue in multi-party SmartContracts.  Calling code or data outside a SmartContract or blockchain in general is breaking the trust barrier threatening the authenticity of the dependent transactions.  Cryptlets supply this functionality.
 
@@ -126,7 +126,7 @@ Cryptlets are off-chain code components that are written in any language, execut
 
 A CryptoDelegate is the function “hook” within the SmartContract Virtual Machine that calls the Cryptlet from the SmartContract code extending the secure and authentic envelope for transactions.  Cryptlets are registered at the attested host^1 and referenced or created automatically by developers.
 
-There are two basic types of Cryptlets; Utility and Contract.  Utility Cryptlets make up the bulk of blockchain middleware providing horizontal services like encryption, time and date events, external data access and authentication services.  Utility Cryptlets each have their own identification and attested signatures that are registered for use in the cloud.  Developers can discover and enlist Cryptlets into their SmartContracts to create more robust and trusted transactions.
+There are two basic types of Cryptlets; Utility and Contract.  Utility Cryptlets make up the bulk of blockchain fabric providing horizontal services like encryption, time and date events, external data access and authentication services.  Utility Cryptlets each have their own identification and attested signatures that are registered for use in the cloud.  Developers can discover and enlist Cryptlets into their SmartContracts to create more robust and trusted transactions.
 
 Contract Cryptlets are full delegation engines that act as a SmartContract surrogate off the chain.  These Cryptlets provide all the execution logic and securely store the data in the SmartContract.  Contract Cryptlets are bound to their SmartContract and created on the fly when the SmartContract is deployed to the blockchain.  Because Contract Cryptlets do not execute in the Virtual Machine they do not run on all nodes in a blockchain, they can run in parallel and execute on vertically scaled systems for greater performance.
 
@@ -150,17 +150,17 @@ Using Cryptlets via the CryptoDelegate, the security envelope is extended from t
 
 Additionally, Cryptlets and or their CryptletContainer could be signed by or include digital signatures from identities that the Cryptlet could do work “on-behalf of”.  For example, a user could create a Cryptlet and sign it with their digital signature and when invoked would perform actions as an agent for the user in a business process.  
 
-The addition of this middleware tier can be thought of as Blockchain 3.0; Data and Logic on a chain with Cryptlets called via a CryptoDelegate from a Smart Contract for off-chain functionality.
+The addition of this Cryptlet Fabric tier can be thought of as Blockchain 3.0; Data and Logic on a chain with Cryptlets called via a CryptoDelegate from a Smart Contract for off-chain functionality.
 
 
 ![3.0](images/evolution.png)
 
-##Blockchain Middleware##
+##Blockchain Fabric##
 Since a distributed ledger network’s value is multiplied by the number of different participants, it becomes obvious that consortiums will dominate the landscape.  This brings up the need for interoperability.  And while we are at it…management and operations, privacy, identity, key management and an enhanced execution model rounds out the list of initial enterprise consortium requirements.  There will be more, but we have to start somewhere.
 
-Blockchain Middleware is essentially an “Enterprise Consortium Distributed Ledger Fabric” that would look and feel like traditional middleware, except it would span the globe functioning largely as APIs or Platform as a Service.
+Blockchain Fabric is essentially an “Enterprise Consortium Distributed Ledger Fabric” that would look and feel like traditional middleware, except it would span the globe functioning largely as APIs or Platform as a Service.
  
-This middleware would provide the following core services:
+This Fabric would provide the following core services:
 
 - **Identity and Certificate Services** - functionality found in both Azure Active Directory and Key Vault to provide PaaS services for authentication, authorization, key issuance, storage, access and lifecycle management.  Providing Cryptlet registration and policy as well as establishing identity for people, organizations, key transactions and contracts and things, this service can be a platform for others to build vertical services like a KYC (“know your customer”) service, asset registration and federation, etc.
 - **Encryption Services** – partial payload encryption, or field level encryption for blockchain transactions with various encryption schemes (homomorphic, threshold, etc.) to make secret those values that should only be seen by the owner and counter parties + regulators
@@ -174,11 +174,11 @@ This middleware would provide the following core services:
 
 The Base Platform Tier can be any SmartContract (Ethereum, Eris, etc.) or UTXO (Hyperledger, etc.) implementation.  If the actual platform chosen supports the Bletchley pluggable model, then the underlying modules can be swapped out for partner offerings like Tendermint and Intel’s POET.
 
-The Middleware Tier can be consumed by any consortium node either by direct integration of the CryptoDelegate in the VM or UTXO Adapter, regardless of the node’s location (Azure, AzureStack, private datacenter, AWS, etc.).
+The Fabric Tier can be consumed by any consortium node either by direct integration of the CryptoDelegate in the VM or UTXO Adapter, regardless of the node’s location (Azure, AzureStack, private datacenter, AWS, etc.).
 
-Middleware to provide the common Enterprise Consortium Blockchain Fabric needed for vertical solutions to be built.  Integration of existing tools can expose distributed ledger capabilities to end users in a manner with which they are familiar.
+Fabric to provide the common Enterprise Consortium Blockchain Fabric needed for vertical solutions to be built.  Integration of existing tools can expose distributed ledger capabilities to end users in a manner with which they are familiar.
 
-Additionally, whole new categories within the Marketplace can be developed.  Base platform components, additional distributed middleware services, Cryptlets as well as full SmartContract libraries can be discovered, purchased and used right within the tools end users use every day.
+Additionally, whole new categories within the Marketplace can be developed.  Base platform components, additional distributed Fabric services, Cryptlets as well as full SmartContract libraries can be discovered, purchased and used right within the tools end users use every day.
 
 A bank can create a certified Commercial Loan SmartContract and list it on the marketplace to get paid for each instance created.  A small business owner can select a OpenProjectFundingRequest SmartContract to crowd source his next project.  A developer can find a KYC Cryptlet that will meet the requirements for his application and a consortium can discover the next best consensus algorithm to try out to improve their performance.
 
@@ -200,3 +200,4 @@ Creating this open ecosystem will take some time.  But if done properly the comb
 More about Bletchley will be disclosed and discussed at [Microsoft's World Wide Partner Conference July 12-16th in Toronto.](https://partner.microsoft.com/en-US/wpc)  See you there!
 
 ^1 *Similar to [Codius](https://www.codius.org/)* suggested by [Ripple](http://ripple.com)
+_____*This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.*
