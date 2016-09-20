@@ -100,10 +100,6 @@ geth --cryptoDelegatePath 'https://azure.com/myconsortium' --cryptoDelegateSigna
 
 ![<Secure Communications>](<images/secureCommunications.png>)
 
-If a Cryptlet is called within a Ethereum SmartContract Function to perform some task and return a result, that Cryptlet will be called for each validating (mining) node on the network.  To prevent potential data volatility collisions during consensus, a function return freeze can be enforced during a call window so that after the first call of the Cryptlet that returns a value, each subsequent call within the call window will return the same value without redoing or performing the compute task.  CryptletContainers will support static method access by implement the CryptletCache pattern into Azure Service Fabric via <a href=https://azure.microsoft.com/en-us/documentation/articles/service-fabric-technical-overview/>Stateful Reliable Actor</a> to cache method returns for multi-node request.  Cryptlets that publish events that are subscribed to by SmartContracts will not need to implement CryptletCache as the Cryptlet need only post the event and data to a single node on the network.The CryptletCache will create a CryptletCacheCallWindow if one does not exist in the Azure Fabric (meaning it is the first time it is called within a window) and cache its response.  If a CryptletCacheCallWindow does exist it will simply return the cache value.
-
-![<Cryptlet Cache>](<images/utilityCryptletCache.png>)
-
 Additionally, Cryptlets and their CryptletContainer could be signed by or include digital signatures from identities that would allow a Cryptlet to do work “on-behalf of” one or more identities.  For example, a user could create a Cryptlet and sign it with their digital signature and when invoked would perform actions as an agent for the user in a business process.  Interesting scenarios can come out of Cryptlets that are signed at design time and those that could potentially be enlisted and signed at runtime to work on behalf of scenarios.
 
 ## Cryptlet Development
