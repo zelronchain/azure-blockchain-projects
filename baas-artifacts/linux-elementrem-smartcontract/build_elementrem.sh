@@ -46,6 +46,7 @@ git clone https://github.com/elementrem/go-elementrem/
 
 # Build elementrem
 cd  go-elementrem
+git checkout Azure
 make gele
 cd
 
