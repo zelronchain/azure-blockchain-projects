@@ -45,7 +45,7 @@ rm go1.6.2.linux-amd64.tar.gz
 git clone https://github.com/elementrem/go-elementrem/
 
 # Build elementrem
-cd  go-elementrem
+cd go-elementrem
 git checkout Azure
 make gele
 cd

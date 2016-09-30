@@ -47,6 +47,11 @@ https://github.com/elementrem/
 
 ***
 
+- You can update gele with the latest version whenever you want.	
+Elementrem Gele update		
+Run `$ sh ./update-gele.sh`
+- Update does not affect your chain,DB,key data. Rest assured on that.		
+
 **1. Select the desired node Elementrem.**
 - Elementrem public node
 Run `$ sh ./start_public.sh`
