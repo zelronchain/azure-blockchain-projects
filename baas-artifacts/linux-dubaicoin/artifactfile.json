@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
+  "title": "Dubaicoin Gold and Diamond Blockchain",
+  "description": "Add an Linux Dubaicoin node to the Lab",
+  "tags": [
+    "Dubaicoin",
+	"Gold",
+	"Diamond",
+    "Blockchain",
+    "Linux"
+  ],
+  "iconUri": "https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-dubaicoin/dubaicoinArtifact.png",
+  "targetOsType": "Linux",
+  "parameters": {
+     "installMethod": {
+      "type": "string",
+      "displayName": "Method to install Dubaicoin. From_PPA: unofficial community bianaries.  From_Source: official Dubaicoin repo on GitHub.",
+      "defaultValue": "From_Source",
+      "allowedValues": [
+        "From_PPA",
+        "From_Source"
+      ]
+    }
+  },
+  "runCommand": {
+    "commandToExecute": "[concat('sh', ' ', 'build_dubaicoin.sh', ' ', parameters('installMethod'))]"
+  }
+}
