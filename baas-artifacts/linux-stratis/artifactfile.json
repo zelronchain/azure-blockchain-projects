@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
+  "title": "Stratis Blockchain",
+  "description": "Add an Linux Stratis node to the Lab",
+  "tags": [
+    "Stratis",
+	"C#",
+	"BaaS",
+    "Blockchain",
+    "Linux"
+  ],
+  "iconUri": "https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-stratis/stratisArtifact.png",
+  "targetOsType": "Linux",
+  "parameters": {
+     "installMethod": {
+      "type": "string",
+      "displayName": "Method to install Stratis. From_PPA: unofficial community bianaries.  From_Source: official Stratis repo on GitHub.",
+      "defaultValue": "From_Source",
+      "allowedValues": [
+        "From_PPA",
+        "From_Source"
+      ]
+    }
+  },
+  "runCommand": {
+    "commandToExecute": "[concat('sh', ' ', 'build_stratis.sh', ' ', parameters('installMethod'))]"
+  }
+}
