@@ -98,9 +98,9 @@ Utility Cryptlets can provide data into Message Queue contract for SmartContract
 ## Contract Cryptlets
 Contract Cryptlets are created and bound to a specific SmartContract instance and is signed by the parent SmartContract and usually runs within an enclave.  The SmartContract using a Contract Cryptlet will inherit property accessors (stored procedures) that implement address checks ensuring that only its Contract Cryptlet can perform certain functions.  The SmartContract and its Contract Cryptlet are bound together with their digital signatures similar to a blockchain wallet.
 
-Contract Cryptlets can host sophisticated logic not entirely suited to run in the EVM for performance and scale purposes. SmartContracts simply contain the state and key variables for the contract (database and accessor methods), while the programming logic, access to external data sources and events of the contract are in its surrogate Cryptlet.  
+Contract Cryptlets can host sophisticated logic not entirely suited to run in the EVM for performance, privacy scale purposes. SmartContracts simply contain the state and key variables for the contract (database and accessor methods), while the programming logic, access to external data sources and events of the contract are in its surrogate Cryptlet.  
 
-Contract Cryptlets used with SmartContracts will allow for more advanced scenarios where performance and scalability are desired.  For example, a Contract Cryptlet can perform the entire operation of a SmartContract in parallel with other Contracts without tying up the EVM.  Using Contract Cryptlets means that each SmartContract does NOT run on all nodes in the blockchain, just those of the counter-parties or attester.
+Contract Cryptlets used with SmartContracts will allow for more advanced scenarios where performance, scalability and privacy are desired.  For example, a Contract Cryptlet can perform the entire operation of a SmartContract in parallel with other Contracts without tying up the EVM.  Using Contract Cryptlets means that each SmartContract does NOT run on all nodes in the blockchain, just those of the counter-parties or attester.
 
 Contract Cryptlets must have at least one instance in the fabric and can have multiple instances in a counter-party Cryptlet pool.  Cryptlets in a pool communicate with each other through the fabric to achieve consensus with each enclave having an equal vote.  One CryptletContainer (enclave) in the pool will record the consensus value to the blockchain. Counter-party pool ledgers can be stored within the SmartContract if desired.
 
@@ -129,7 +129,7 @@ Control is the pattern that Contract Cryptlets, described in another section of 
 
 In this example, the SmartContract is basically defining a state table, accessor properties to update the data with messages sent by the Control Cryptlet.  This pattern allows for the logic within a SmartContract to be run on a defined number of compute resources (at least 1) and located, scaled and secured independently from the blockchain itself.  
 
-For example, Control would let you run your logic on a massive VM instance with a lot of RAM and solid state storage that is co-located within an exchange for optimum performance.
+For example, Control would let you run your logic on a massive VM instance with a lot of RAM and solid state storage that is co-located within an exchange for optimum performance and private execution.
 
 ## Common Characteristics
 Cryptlets must go through a registration process in order to setup their environment for execution and dependent secure infrastructure.  There are several ways this can be done depending on the Cryptlet type.
@@ -335,7 +335,7 @@ public CryptletContainer(bool enclaved){
 }
 ```
 ## Enclaving
-Use of secure computation via enclaves (isolation of code within a secure boundary) implemented via hardware using hardware or Hypervisor-based solutions provides Cryptlets the environment to perform isolated execution and encryption services.  Building off of Microsoft Researchers work on Secure Computation Interfaces the CryptletHostContainerService, CryptoDelegate and CryptletContainer can implement these interfaces to setup a secure operating environment while abstracting away the actual enclaving technology being used.
+Use of secure computation via enclaves (isolation of code within a secure boundary) implemented via hardware using hardware or Hypervisor-based solutions provides Cryptlets the environment to perform isolated execution and encryption services.  Building off of Microsoft Researchers work on Secure Computation Interfaces the CryptletHostContainerService, CryptoDelegate and CryptletContainer can implement these interfaces to setup a secure, private operating environment while abstracting away the actual enclaving technology being used.
 
 When the CryptletHostContainerService receives the first call for a Cryptlet that needs to be isolated, requires encryption/decryption capabilities or is a Contract Cryptlet, a secure isolated region will need to be created by the CryptletHostContainerService:
 ```cpp
