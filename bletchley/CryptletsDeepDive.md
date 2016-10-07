@@ -20,6 +20,7 @@ Examples:
 * Secure execution of external code would be needed if a SmartContract required that portions of its logic needed to run in completely secure isolation and attested that it was not tampered with during execution. 
 	* Secure IP protected algorithms but still share with the blockchain network: i.e. derivative pricing algorithm that multiple counter parties agree to use for a contract, but the actual algorithm remains secret, but attested.
 	* Scale an algorithm for maximum performance by running it off the blockchain in a secure and attested way.
+	* Privacy of execution, share secrets (terms, keys, data) for transaction completion.
 	* Perform complex interactions like distributed transaction coordination across many systems in a secure way.
 	* Use libraries for common platforms like Java and .NET in your SmartContracts.
 
