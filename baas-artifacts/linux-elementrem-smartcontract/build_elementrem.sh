@@ -75,12 +75,12 @@ echo "{
 
 # Downloads scripts
 cd $HOMEDIR
-wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/elementrem-smartcontract-blockchain/attach_private.sh
-wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/elementrem-smartcontract-blockchain/attach_public.sh
-wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/elementrem-smartcontract-blockchain/start_private.sh
-wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/elementrem-smartcontract-blockchain/start_public.sh
-wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/elementrem-smartcontract-blockchain/meteor-wallet-setup.sh
-wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/elementrem-smartcontract-blockchain/update-gele.sh
+wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/attach_private.sh
+wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/attach_public.sh
+wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/start_private.sh
+wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/start_public.sh
+wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/meteor-wallet-setup.sh
+wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/update-gele.sh
 
 # Initialize private network
 cd $HOMEDIR
