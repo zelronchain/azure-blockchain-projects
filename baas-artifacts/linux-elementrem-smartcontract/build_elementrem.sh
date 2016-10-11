@@ -35,12 +35,6 @@ sudo apt-get install -y git curl wget
 
 # Install go-lang
 sudo apt-get install -y build-essential libgmp3-dev golang git curl
-curl -O https://storage.googleapis.com/golang/go1.6.2.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.6.2.linux-amd64.tar.gz
-mkdir -p ~/go; echo "export GOPATH=$HOME/go" >> ~/.bashrc
-echo "export PATH=$PATH:$HOME/go/bin:/usr/local/go/bin" >> ~/.bashrc
-source ~/.bashrc
-rm go1.6.2.linux-amd64.tar.gz
 
 # Downloads git source 
 git clone https://github.com/elementrem/go-elementrem/
