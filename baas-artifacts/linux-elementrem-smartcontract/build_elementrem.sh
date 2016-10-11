@@ -8,33 +8,20 @@ date
 ps axjf
 
 # Parameters
-
 AZUREUSER=$1
+EXDATA=`echo "$2" | xxd -plain -c 250`
 HOMEDIR="/home/$AZUREUSER"
 VMNAME=`hostname`
 echo "User: $AZUREUSER"
 echo "User home dir: $HOMEDIR"
 echo "vmname: $VMNAME"
 
-# Downloads scripts
-cd $HOMEDIR
-wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/attach_private.sh
-wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/attach_public.sh
-wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/start_private.sh
-wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/start_public.sh
-wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/private_prerequisites.json
-wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/meteor-wallet-setup.sh
-wget https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-elementrem-smartcontract/update-gele.sh
-
 # Initialize
 cd $HOMEDIR
-sudo apt -y update
-sudo apt -y upgrade
 sudo apt-get install -y git curl wget
 
-
 # Install go-lang
-sudo apt-get install -y build-essential libgmp3-dev golang git curl
+sudo apt-get install -y build-essential libgmp3-dev golang
 
 # Downloads git source 
 git clone https://github.com/elementrem/go-elementrem/
@@ -69,12 +56,11 @@ sudo apt-get -y install libboost-filesystem-dev
 sudo apt-get -f -y install
 sudo dpkg -i libboost-filesystem-dev_1.58.0.1ubuntu1_amd64.deb
 sudo dpkg -i solc_0.3.6-0ubuntu1~xenial_amd64.deb
-cd ..
+cd $HOMEDIR
 rm -rf solidity
 
 # Initialize private_genesis_Block
-exdata=`echo "$2" | xxd -plain -c 250`
-
+cd $HOMEDIR
 echo "{
   \"alloc\": {},
   \"nonce\": \"0x0000000000000000\",
@@ -83,9 +69,19 @@ echo "{
   \"coinbase\": \"0x0000000000000000000000000000000000000000\",
   \"timestamp\": \"0x00\",
   \"parentHash\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",
-  \"extraData\": \"0x$exdata\",
+  \"extraData\": \"0x$EXDATA\",
   \"gasLimit\": \"0x2FEFD8\"
 }" > private_prerequisites.json
+
+# Downloads scripts
+cd $HOMEDIR
+wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/elementrem-smartcontract-blockchain/attach_private.sh
+wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/elementrem-smartcontract-blockchain/attach_public.sh
+wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/elementrem-smartcontract-blockchain/start_private.sh
+wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/elementrem-smartcontract-blockchain/start_public.sh
+wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/elementrem-smartcontract-blockchain/private_prerequisites.json
+wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/elementrem-smartcontract-blockchain/meteor-wallet-setup.sh
+wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/elementrem-smartcontract-blockchain/update-gele.sh
 
 # Initialize private network
 cd $HOMEDIR
