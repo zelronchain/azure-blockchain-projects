@@ -240,7 +240,7 @@ Cryptlet behaviors like process isolation using enclaving to run the CryptletCon
 
 Attributes can be placed in the code indicating that execution of logic at the attribution point is delegated through the CryptoDelegate.  For example, if a property in a SmartContract needs to be encrypted and only visible to counter-parties of the contract, an attribute like this can be applied.
 ```csharp
-[encryptField='ContractSignersOnly']
+[SecureField='ContractSignersOnly']
 uint public trade_amount = 0;
 ```
 A Contract Cryptlet will be declared in the SmartContract itself and can be installed during deployment to the blockchain via the SmartContract constructor.  The SmartContract using full delegation of processing to the Cryptlet will simply store the authentic values and signatures instead of running the logic.  This will allow Contract Cryptlets to be more dynamic and can support scale up models where more performance is required and parallel execution is desired.    
