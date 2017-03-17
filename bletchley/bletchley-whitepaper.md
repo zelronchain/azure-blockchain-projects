@@ -117,7 +117,7 @@ A modular framework will allow consortiums to pick the best of breed components 
 
 Cryptlets are the principal building blocks for introducing a secure blockchain middleware tier into the architecture. Given the distributed nature of blockchain, this middleware naturally functions as a service in the cloud (Azure/Azure Stack, AWS, Google, Private) and is more accurately called an Application Fabric. 
 
-In what is referred to as blockchain 1.0 & 2.0, if external data or events based on time or market conditions needs to interact with the blockchain, an “oracle” is required.  There is no standard way to supply “oracle” data securely and can quickly become an issue in multi-party SmartContracts.  Calling code or data outside a SmartContract or blockchain in general is breaking the trust barrier threatening the authenticity of the dependent transactions.  Cryptlets supply this functionality.
+In what is referred to as blockchain 1.0 & 2.0, if external data or events based on time or market conditions needs to interact with the blockchain, an “oracle” is required.  There is no standard way to supply “oracle” data securely, which can quickly become an issue in multi-party SmartContracts.  Calling code or data outside a SmartContract or blockchain in general is breaking the trust barrier threatening the authenticity of the dependent transactions.  Cryptlets supply this functionality.
 
 
 ![Cryptlets](images/cryptlets.png)
@@ -200,4 +200,5 @@ Creating this open ecosystem will take some time.  But if done properly the comb
 More about Bletchley will be disclosed and discussed at [Microsoft's World Wide Partner Conference July 12-16th in Toronto.](https://partner.microsoft.com/en-US/wpc)  See you there!
 
 ^1 *Similar to [Codius](https://www.codius.org/)* suggested by [Ripple](http://ripple.com)
-_____*This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.*
+_____
+*This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.*
