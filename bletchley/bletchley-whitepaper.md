@@ -1,7 +1,7 @@
-#Introducing Project "Bletchley"
+# Introducing Project "Bletchley"
 *Marley Gray, Principle Architect PM - Microsoft - Azure Blockchain Engineering*
 
-###Microsoft's Blockchain Architecture Overview
+### Microsoft's Blockchain Architecture Overview
 
 Blockchain has captured the collective curiosity of the business and technology world and rapidly approaches the peak of the hype-cycle witnessed in other technology “fads” of the past.  However, this “fad” is different from those in that it is **largely not based on new technology**, but rather a composite of proven technologies applied to create the underpinning of Bitcoin.  However, that same technology when applied to other use cases happens to address a substantial latent pain that exists across industries.  Blockchain, or more accurately Distributed Ledger, is more of a catalyst to inspire change in the way disparate organizations work together in highly competitive markets.  Existing inter-company transactions carry enormous costs in process, procedure and crosschecking of records to come to settlement on what could turn out to be a trivial exercise using blockchain technology.  In short, blockchain or distributed ledger technologies can provide the next wave of innovation that streamlines the way business operates, the same way the web did, giving birth to a new collaborative economy.
 
@@ -9,8 +9,8 @@ Bletchley is Microsoft’s architectural approach to building an Enterprise Cons
 
 If you are already comfortable with blockchain technology and do not need an introduction, please skip forward to the [Bletchley Overview](#bletchley).
 
-##Definitions##
-###Cryptographically Tokenized Assets###
+## Definitions ##
+### Cryptographically Tokenized Assets ###
 Tokens are sometimes referred to as Digital Bearer Bonds which simply means establishing a digitally unique identity for something that can be owned or that can own other things.  Use of cryptographic one-way hashes allows for any asset, whether it be a digital or physical asset, to be represented as a token, a secure identity. 
  
 However, identity tokens are not the whole picture, you need a second piece to make a complete secure identity, the identity proof.  The proof of identity is determined with public/private keys.  Together an identity token paired with proof provides a solution for secure identity for everything. 
@@ -41,7 +41,7 @@ This allows assets to be tracked individually and collectively across organizati
 Tokens can represent all sorts of things including people, institutions, commodities, contracts and even digital currencies and sovereign or fiat currencies via pegging to existing fiat currencies. The list of things that tokenization can represent goes on and on across Equities, Bonds, Derivatives, Insurance, Loans, Diamonds, Cars, Parts, Receipts...
 
 
-###Blockchain = Cryptographically Authentic, Shared, Distributed Ledger###
+### Blockchain = Cryptographically Authentic, Shared, Distributed Ledger ###
 - Cryptographically Authentic – Uses tried and true public/private signature technology that is the backbone of e-commerce and digital signatures today.  Tokenization using this technology allows the creation of a Secure Identity and transactions that are impervious to fraud establishing a shared truth.
 - Shared – Blockchains have little value within a single organization or company. Its value is directly and arguably exponentially linked to the number of organizations or companies that participate in them. There is huge value for even the fiercest of competitors to participate with each other in these shared database implementations.  Blockchains can be public or “members only” networks providing truth without the need for intermediaries.
 - Distributed – there are many replicas of the blockchain database and no one owns it.  In fact, the more replicas there are the more authentic and secure it becomes.  When one asks the question: “How secure is the blockchain?” it is usually answered by stating the number of nodes in the network.  
@@ -68,7 +68,7 @@ Using this simple database, that is authentic, shared, not centrally owned and i
 In summary, combining tokenization with an authentic shared ledger which every participant agrees represents the immutable truth has the potential to remove massive amounts of manual, time consuming “agreement” periods dedicated to settlement.  Not only does it remove the unnecessary settlement time (*note some settlement time may still be desired*) but also the reactive fire drills required when an audit is requested by a regulator or law enforcement.  The full audit trail is created in real-time during the transaction as a by-product of using blockchain technology.  Providing an auditor access to this log in real-time is now possible as opposed to the labor-intensive look back nature of auditing today.  
   
 
-###Current Blockchain Ecosystem and Evolution###
+### Current Blockchain Ecosystem and Evolution ###
 
 ***History repeats itself…evolution***
 
@@ -189,7 +189,7 @@ Eventually, Consortiums will form and settle into their networks.  These consort
 ***Example Consortium***
 ![Consortium](images/consortiumrings.png)
 
-#Summary
+# Summary
 
 The evolution of blockchain implementations mirrors that of the web generation of technologies.  We see the need for middleware to be introduced into this ecosystem to supply enterprise grade services around identity, security, cryptography, scale, tooling, management, monitoring and reporting.  The difference this time is the cloud.
   
