@@ -9,7 +9,7 @@ By clicking "Deploy to Azure" you agree to the Terms and Conditions below.
  
 #
 Manifold's BaaS product allows enterprises to manage diverse account relationships. With Manifold, enterprises can now link accounts to Azure's cloud-based blockchain and establish relationships between accounts and accounting entities, simplifying complex tasks like managing shared P&Ls.
-#<br>
+# <br>
 Manifold Platform uses the Oracle JVM, and use of this image signifies your agreement with the license for thier product. 
 
 Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX

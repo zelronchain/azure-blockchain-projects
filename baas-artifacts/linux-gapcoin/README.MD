@@ -10,7 +10,7 @@ Azure VM is independent from the system. It also provides a very strong security
 ----------
 
 
-#What is Gapcoin?
+# What is Gapcoin?
 ![Gapcoin](https://raw.githubusercontent.com/Azure/azure-blockchain-projects/master/baas-artifacts/linux-gapcoin/images/gap-logo.png)
 Gapcoin is a new prime number based p2p cryptocurrency, which tries to eliminate the sticking points of other scientific currencies like Primecoin or Riecoin. 
 It's a fork of Satoshi Nakamotos Bitcoin, a decentralized payment system which is independent of banks, governments and other centralized regulators. 

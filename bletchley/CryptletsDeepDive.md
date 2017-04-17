@@ -1,5 +1,5 @@
-#Project Bletchley - The Cryptlet Fabric
-##Cryptlets in Depth 
+# Project Bletchley - The Cryptlet Fabric
+## Cryptlets in Depth 
 
 The promise that blockchain has to revolutionize how business and individuals trade value over the internet is staggering.  Enterprise organizations see the vision for disrupting their industry and themselves.  The atom has been split, so now the race to take advantage of it begins.  
 
@@ -61,7 +61,7 @@ This paper explores some of the features and behaviors for Cryptlets in the Proj
 + [**Conclusion**](CryptletsDeepDive.md#conclusion)
 
 
-##Overview
+## Overview
 Cryptlets are off-chain code modules that are written in any language that can execute within a secure, isolated, trusted container and is communicated with over secure channels.  Cryptlets can be used in SmartContracts and UTXO systems when additional functionality or information is needed, upgrading the blockchain “oracle” approach with a Cryptlet and CryptoDelegate or adaptor.
 
 A CryptoDelegate is the function “hook” within the SmartContract Virtual Machine that calls a Cryptlet from SmartContract code extending the secure and authentic envelop for transactions off the blockchain.  A Cryptlet called via a CryptoDelegate is trusted either by being signed with the digital signature that was trusted and validated when written or at design time.  Each call through the CryptoDelegate checks signatures for validity at runtime and records them along with the transaction.
@@ -112,7 +112,7 @@ Contract Cryptlets are created when a SmartContract is deployed to the blockchai
 
 There are three basic use cases for Cryptlets: Event, Control and Static. Cryptlets are not restricted to only these use cases, these are just the obvious ones.
 
-###Event
+### Event
 
 Event Driven Cryptlets expose events that SmartContracts can subscribe to.  These Cryptlets provide notification services based on some event criteria and can also optionally pass in secure data upon notification.
 
@@ -120,7 +120,7 @@ Event Driven Cryptlets expose events that SmartContracts can subscribe to.  Thes
 
 In this example, the SmartContract subscribes to the MarketEvent published by the MarketWatcher Cryptlet.  In the subscription it tells the MarketEvent when to wake it up, only if the markets were open that day and what prices it wants when the event is fired.  The MarketWatcher Cryptlet will then wake the SmartContract up with a message at exactly 4:00 PM EST, if the markets were open that day and provide the LIBOR rate and the price of gold in the message.  The message is routed directly to the call back function CalculatePrice() which will then perform the logic with the data provided. 
 
-###Control
+### Control
 
 Control is the pattern that Contract Cryptlets, described in another section of this paper, follow.  SmartContracts that use Control will delegate all of the business logic that needs to be performed to the Cryptlet.  The SmartContract inherits from the ContractCryptlet class that wires up the signature and meta data required for functionality and implements the data or state with a variable + property accessor to store state.  
  
@@ -454,7 +454,7 @@ Creating a formal security model for interacting with the real world and providi
 
 Cryptlets will provide the infrastructure required to deliver a suite of blockchain functionality in the middle tier as libraries or services initially identified as: Blockchain Gateway Services, Identity & Key Management, Privacy & Encryption as well as Data Services (machine learning, analytics and BI Dashboards).
 
-##Appendix
+## Appendix
 Components and Actors
 * Cryptlet - A small program written to run within a CryptletContainer that executes programs to provide secure services and data to blockchains.
 

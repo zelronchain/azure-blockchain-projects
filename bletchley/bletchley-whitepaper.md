@@ -92,7 +92,7 @@ Blockchain 2.0 and 1.0 differ in how things are tokenized and are transacted aga
 Early blockchain applications and proof-of-concepts have found the need to have these systems interact with the outside world for time or event based things.  To allow for these applications to do so, the use of “oracles” has emerged.  Oracles can inject real world events into the blockchain database like providing a point in time price, recording actual coordinated time or an interest rate.  However, the introduction of “oracles” into these 1.0 and 2.0 system exposes what is supposed to be a deterministic execution into one that can be subjected to untrusted randomness.  How does one know or trust that, say the LIBOR, is coming from a trusted source? Is the entire environment where an oracle and inject values into the blockchain secure?
 
 <a name="bletchley">
-#Code Name “Bletchley” Overview </a>
+# Code Name “Bletchley” Overview </a>
 Open source technologies will serve as the building blocks for this ecosystem.  Supporting open standards for protocol level implementations of Peer-2-Peer/networking, consensus, database and virtual machines are key in establishing trust within the larger ecosystem and accelerates innovation.
 
 **Core/Kernel/Universal Protocol**
@@ -113,7 +113,7 @@ For example, in financial services, a distributed ledger that meets the performa
 
 A modular framework will allow consortiums to pick the best of breed components and build their distributed applications regardless of the detail underneath.  Additionally, it will allow for the components to change barring any dependencies created above the core layer.
 
-##Bletchley introduces Cryptlets##
+## Bletchley introduces Cryptlets ##
 
 Cryptlets are the principal building blocks for introducing a secure blockchain middleware tier into the architecture. Given the distributed nature of blockchain, this middleware naturally functions as a service in the cloud (Azure/Azure Stack, AWS, Google, Private) and is more accurately called an Application Fabric. 
 
@@ -155,7 +155,7 @@ The addition of this Cryptlet Fabric tier can be thought of as Blockchain 3.0; D
 
 ![3.0](images/evolution.png)
 
-##Blockchain Fabric##
+## Blockchain Fabric ##
 Since a distributed ledger network’s value is multiplied by the number of different participants, it becomes obvious that consortiums will dominate the landscape.  This brings up the need for interoperability.  And while we are at it…management and operations, privacy, identity, key management and an enhanced execution model rounds out the list of initial enterprise consortium requirements.  There will be more, but we have to start somewhere.
 
 Blockchain Fabric is essentially an “Enterprise Consortium Distributed Ledger Fabric” that would look and feel like traditional middleware, except it would span the globe functioning largely as APIs or Platform as a Service.

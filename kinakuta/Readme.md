@@ -1,4 +1,4 @@
-#Kinakuta
+# Kinakuta
 *(fictional location of the data haven in <a href="https://en.wikipedia.org/wiki/Cryptonomicon"> Neal Stephenson's Cryptonomicon</a>)*
 
 Soon to be home to documentation, best practices and tools for improving the reliability and security of Smart Contract development.
