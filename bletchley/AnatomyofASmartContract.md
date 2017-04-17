@@ -1,4 +1,4 @@
-#Anatomy of a Smart Contract
+# Anatomy of a Smart Contract
 *Marley Gray & Craig Hajduk - Microsoft*
 <h2>Introduction</h2>
 
