@@ -8,7 +8,7 @@ ps axjf
 ​
 AZUREUSER=$2
 HOMEDIR="/home/$AZUREUSER"
-WHITECPATH="$HOMEDIR/.Whitecoin"
+WHITECPATH="$HOMEDIR/.whitecoin-xwc"
 VMNAME=$(hostname)
 echo "User: $AZUREUSER"
 echo "User home dir: $HOMEDIR"
@@ -21,7 +21,7 @@ if [ "$1" = 'From_Source' ]; then
 sudo apt-get update
 sudo apt-get -y install git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev unzip pwgen miniupnpc libminiupnpc-dev curl
 cd /usr/local/src/ || exit
-sudo git clone https://github.com/Whitecoin-org/Whitecoin whitecoin
+sudo git clone https://github.com/Whitecoin-org/whitecoin whitecoin
 cd whitecoin/src || exit
 sudo make -f makefile.unix
 ​sudo strip whitecoind
@@ -32,8 +32,8 @@ else
 sudo apt-get update
 sudo apt-get -y install git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev unzip pwgen miniupnpc libminiupnpc-dev curl
 cd /usr/local/src/ || exit
-DOWNLOADFILE=$(curl -s https://api.github.com/repos/Whitecoin-org/Whitecoin/releases | grep browser_download_url | grep linux64 | head -n 1 | cut -d '"' -f 4)
-DOWNLOADNAME=$(curl -s https://api.github.com/repos/Whitecoin-org/Whitecoin/releases | grep name | grep linux64 | head -n 1 | cut -d '"' -f 4)
+DOWNLOADFILE=$(curl -s https://api.github.com/repos/Whitecoin-org/whitecoin/releases | grep browser_download_url | grep linux64 | head -n 1 | cut -d '"' -f 4)
+DOWNLOADNAME=$(curl -s https://api.github.com/repos/Whitecoin-org/whitecoin/releases | grep name | grep linux64 | head -n 1 | cut -d '"' -f 4)
 sudo wget "$DOWNLOADFILE"
 sudo unzip "$DOWNLOADNAME"
 sudo chmod 755 whitecoind
@@ -51,12 +51,12 @@ su - "$AZUREUSER" -c "cd $WHITECPATH; wget https://github.com/Whitecoin-org/xwc-
 su - "$AZUREUSER" -c "cd $WHITECPATH; unzip xwc-blockchain.zip"
 ​
 # Create configuration File
-su - "$AZUREUSER" -c "touch $WHITECPATH/Whitecoin.conf"
+su - "$AZUREUSER" -c "touch $WHITECPATH/whitecoin.conf"
 rpcu=$(pwgen -ncsB 35 1)
 rpcp=$(pwgen -ncsB 75 1)
 echo "rpcuser=$rpcu
 rpcpassword=$rpcp
-daemon=1" > "$WHITECPATH"/Whitecoin.conf
+daemon=1" > "$WHITECPATH"/whitecoin.conf
 ​
 # Start Whitecoin Client
 su - "$AZUREUSER" -c "whitecoind"
