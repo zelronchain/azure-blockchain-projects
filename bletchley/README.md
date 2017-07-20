@@ -7,6 +7,7 @@ Contents
 - <a href= "bletchley-whitepaper.md">White Paper</a> - Overview of the blockchain vision and ecosystem
 - <a href="CryptletsDeepDive.md">Cryptlets in Depth</a> - Deep dive introduction into Cryptlets
 - <a href="AnatomyofASmartContract.md">Anatomy of a Smart Contract</a> - Context for refactoring Smart Contracts for Semi-Trusted Consortium Blockchains
+- <a href="EnterpriseSmartContracts.md">Enterprise Smart Contracts</a> - Implementation details for creating composite contracts in a three tiered environment
 
 _________________
 
