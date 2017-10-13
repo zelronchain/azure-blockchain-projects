@@ -26,8 +26,7 @@ Send DTC | datacoind sendtoaddress xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx amount</br>
 Recent Transactions | datacoind listtransactions</br>
 Mining Information | datacoind getmininginfo</br>
 
-<h2>License</h2></br>
-Datacoin is released under conditional MIT license.
-
+<h2>License</h2>
+Datacoin is released under conditional MIT license. See COPYING
 </body>
 </html>
