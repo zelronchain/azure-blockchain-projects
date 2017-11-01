@@ -91,8 +91,8 @@ Blockchain 2.0 and 1.0 differ in how things are tokenized and are transacted aga
 
 Early blockchain applications and proof-of-concepts have found the need to have these systems interact with the outside world for time or event based things.  To allow for these applications to do so, the use of “oracles” has emerged.  Oracles can inject real world events into the blockchain database like providing a point in time price, recording actual coordinated time or an interest rate.  However, the introduction of “oracles” into these 1.0 and 2.0 system exposes what is supposed to be a deterministic execution into one that can be subjected to untrusted randomness.  How does one know or trust that, say the LIBOR, is coming from a trusted source? Is the entire environment where an oracle and inject values into the blockchain secure?
 
-<a name="bletchley">
-# Code Name “Bletchley” Overview </a>
+# <a name="bletchley">Code Name “Bletchley” Overview</a>
+
 Open source technologies will serve as the building blocks for this ecosystem.  Supporting open standards for protocol level implementations of Peer-2-Peer/networking, consensus, database and virtual machines are key in establishing trust within the larger ecosystem and accelerates innovation.
 
 **Core/Kernel/Universal Protocol**
