@@ -12,7 +12,7 @@ The Bletchley Map is for you.
 
 Here we take a step back, or zoom out if you will, to reevaluate the big picture. What makes blockchains seem so interestingly magical to some and often dismissed by others?
 
-![Monopoly](images/oldeuropemap.jpg)
+![OldEuropeMap](images/oldeuropemap.jpg)
 
 Previous papers in the Token series provide an introduction and guide for you to grasp the basic concepts involved when approaching blockchains. So we will not dip into the whole distributed consensus algorithms burrow nor will we debate varying approaches of achieving some usable level of privacy.
 
