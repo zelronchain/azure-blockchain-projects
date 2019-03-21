@@ -42,7 +42,7 @@ Wow, that is a mouthful and can get WAY more complicated. But for all intents an
 
 Tokens are representations of something. Think about the board game Monopoly - the whole game is tokens. You have the game piece that each player chooses to represent themselves in the game. You also have the property cards a player purchases. Oh, and the money the players earn and use to purchase those properties and the "Get out of Jail" card a player can draw when they get into trouble.
 
-![Monopoly](images/monopoly%20board.jpg)
+![Monopoly](images/monopolyboard.jpg)
 
 Each of those things represents a token, but these tokens are not of the same type.  A game piece represents a player, or say an identity or account.  The money represents, well, physical money and the property cards represent a land deed or title.  Note, the property cards also contain details like rents or fees which represent contracts, which we will cover later.
 
