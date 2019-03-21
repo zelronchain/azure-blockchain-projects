@@ -12,7 +12,7 @@ The Bletchley Map is for you.
 
 Here we take a step back, or zoom out if you will, to reevaluate the big picture. What makes blockchains seem so interestingly magical to some and often dismissed by others?
 
-![Monopoly](images/old%20europe%20map.jpg)
+![Monopoly](images/oldeuropemap.jpg)
 
 Previous papers in the Token series provide an introduction and guide for you to grasp the basic concepts involved when approaching blockchains. So we will not dip into the whole distributed consensus algorithms burrow nor will we debate varying approaches of achieving some usable level of privacy.
 
@@ -76,7 +76,7 @@ The authenticity of gold coins was initially determined dentally, which at the t
 
 It wasn’t until the issuers of coins began plating rubbish materials with precious metals that their value was greater than their melted form. This was an interim step in the direction of full on material substitution to make the coin by using low valued metals and even paper to represent a blob of gold held by the issuer of the coin.
 
-![Gold coins](images/old%20gold%20coins.jpg)
+![Gold coins](images/oldgoldcoins.jpg)
 
 >The bearer instrument was born, well kind of. Meaning, the notion of a token as the bearer instrument representing value located somewhere else. Risk in using gold as currency could simply be the possession of them, with a bearer instrument the risk resided in determining authenticity when accepting it as payment for your labor or an asset you are selling.
 
@@ -106,7 +106,7 @@ Often it's useful to state things that are obvious and clearly understood about 
 
 #### Properties of Money
 
-![100 Dollar Bill](images/hundred%20dollar%20bill.jpg)
+![100 Dollar Bill](images/hundreddollarbill.jpg)
 
 - Look & feel - physical properties that can help establish authenticity almost immediately and can be verified with further scrutiny.  Paper quality, holographs, etc.
   
@@ -197,7 +197,7 @@ Here are some common behaviors.
 - Suspendable – a token can be restricted for redemption, transfer or use based on some event. A token that represents a credit may be suspended until some issue with the credit is resolved.
 - Extension or Add-on – an optional add on set of properties like a concert ticket with a VIP backstage pass.  Or a cruise ticket with unlimited food and drink.
 
-There are many more of these, in fact there is a [taxonomy effort](../eea-tokens/token-taxonomy.md) underway now if you want to learn more.
+There are many more of these, but more to come on that later.
 
 ## Important Token Concepts
 
